@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 html{
@@ -217,13 +218,14 @@ form.grupo{
 
 input {
     background:none;
-    color: #c6c6c6;
+    color: black;
     font-size: 20px;
     padding: 10px 10px 10px 0;
     display: block;
     width: 100%;
     border: none;
     border-bottom: 1px solid blue;
+    
 }
 
 input:focus{
@@ -258,8 +260,8 @@ textarea {
     font-size: 16px;
     resize: none;
   }
-button{
-    font-family:  ;
+.botonEnviar {
+    font-family: 'Trirong' ;
     background: blue;
     border: none;
     display: block;
@@ -269,6 +271,15 @@ button{
     height: 40px;
     font-size: 16px;
     cursor: pointer;
+}
+#error{
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
 }
 
 
@@ -362,3 +373,4 @@ footer .container2{
     font-size: 16px;
     top: 10px;
 }
+

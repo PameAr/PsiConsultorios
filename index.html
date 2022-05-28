@@ -7,10 +7,9 @@
     <title>PsiConsultorios</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" href="images/icono.ico">
-
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Trirong:wght@500&display=swap" rel="stylesheet">
-   
     <script src="https://kit.fontawesome.com/fa888703a1.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="contenedor-grid">
@@ -44,7 +43,7 @@
                     <h3>Atención Psicológica</h3>
                     <p>Sesiones Virtuales <br>
                     Sesiones Presenciales</p>
-                    <a href="contacto.html" target="_blank">Me gustaría atenderme</a>
+                    <a href="#contacto">Me gustaría atenderme</a>
                 </article>
             
                 <article class="cartas">
@@ -52,7 +51,7 @@
                     <h3>Supervisiones</h3>
                     <p>Individuales o grupales <br>
                        Role Play de intervenciones</p>
-                    <a href="index.html">Contactar</a>
+                    <a href="#contacto">Contactar</a>
                 </article>
             
                 <article  class="cartas">
@@ -60,7 +59,7 @@
                     <h3>Charlas a Empresas</h3>
                     <p>Temas a coordinar <br>
                        Ej: Burn Out, Estrés por COVID, etc.</p>
-                    <a href="index.html">Contactar</a>
+                    <a href="#contacto">Contactar</a>
                 </article>
         </div>
         </section>
@@ -124,9 +123,11 @@
                     <div>
                         <textarea name="consulta" cols="70" rows="10" placeholder="Escribe tu consulta..."></textarea>
                     </div>
-                    <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+
+                    <input id="enviar" name="enviar" type="submit" onclick = "return enviarForm();" class="botonEnviar">
                 </div>
             </form>
+            <div id = "error"></div>
            
     </main>
     <!--ASIDE-->
@@ -169,5 +170,6 @@
                 </div>
         </div>
     </footer>
+    <script src='./javascript/scripts.js'></script>
 </body>
 </html>
